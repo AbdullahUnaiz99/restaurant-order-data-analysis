@@ -35,6 +35,12 @@ go
  from menu_items
  group by category
  go
+
+-- what is the average dish price within each category 
+select category, avg(price) as Average_price 
+from menu_items
+group by category 
+go
  
 
 
